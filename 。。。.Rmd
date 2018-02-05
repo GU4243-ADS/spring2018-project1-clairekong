@@ -1,0 +1,94 @@
+---
+title: "Spooky Data Analysis"
+author: "Mingyue Kong"
+date: "2018/2/4"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+setwd("~/Desktop/spring2018-project1-clairekong")
+read.csv("~/Desktop/spring2018-project1-clairekong/data/spooky.csv")
+Q <- read.csv("~/Desktop/spring2018-project1-clairekong/data/spooky.csv", stringsAsFactors = FALSE)
+spooky<-read.csv("~/Desktop/spring2018-project1-clairekong/data/spooky.csv")
+
+install.packages("ggplot2", repos = "http://cran.us.r-project.org")
+install.packages("tibble", repos = "http://cran.us.r-project.org")
+install.packages("tidyr", repos = "http://cran.us.r-project.org")
+install.packages("stringr", repos = "http://cran.us.r-project.org")
+install.packages("tidytext", repos = "http://cran.us.r-project.org")
+install.packages("topicmodels", repos = "http://cran.us.r-project.org")
+install.packages("wordcloud", repos = "http://cran.us.r-project.org")
+install.packages("ggridges", repos = "http://cran.us.r-project.org")
+
+library(ggplot2)
+library(dplyr)
+library(tibble)
+library(tidyr)
+library(stringr)
+library(tidytext)
+library(topicmodels)
+library(wordcloud)
+library(ggridges)
+
+summary(Q$author)
+Q$author <- as.factor(Q$author)
+
+Q_EAP<-Q[Q$author=='EAP',] 
+Q_HPL<-Q[Q$author=='HPL',]
+Q_MWS<-Q[Q$author=='MWS',]
+
+summary(Q_EAP)
+nrow(Q_EAP)
+nrow(Q_HPL)
+nrow(Q_MWS)
+
+
+
+tidy_EAP <- unnest_tokens(Q_EAP, word, text)
+tidy_HPL <- unnest_tokens(Q_HPL, word, text)
+tidy_MWS <- unnest_tokens(Q_MWS, word, text)
+
+tidy_EAP <- anti_join(tidy_EAP, stop_words, by = "word")
+tidy_HPL <- anti_join(tidy_HPL, stop_words, by = "word")
+tidy_MWS <- anti_join(tidy_MWS, stop_words, by = "word")
+
+
+words_EAP <- count(group_by(tidy_EAP, word))$word
+freqs_EAP <- count(group_by(tidy_EAP, word))$n
+
+head(sort(freqs_EAP, decreasing = TRUE))
+wordcloud(words_EAP, freqs_EAP, max.words = 50, color = c("purple4", "red4", "black"))
+
+words_HPL <- count(group_by(tidy_HPL, word))$word
+freqs_HPL <- count(group_by(tidy_HPL, word))$n
+
+head(sort(freqs_HPL, decreasing = TRUE))
+wordcloud(words_HPL, freqs_HPL, max.words = 50, color = c("purple4", "red4", "black"))
+
+words_MWS <- count(group_by(tidy_MWS, word))$word
+freqs_MWS <- count(group_by(tidy_MWS, word))$n
+
+head(sort(freqs_MWS, decreasing = TRUE))
+wordcloud(words_MWS, freqs_MWS, max.words = 50, color = c("purple4", "red4", "black"))
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
