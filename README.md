@@ -5,7 +5,6 @@ output:
   html_document:
     df_print: paged
     toc: yes
-    keep_md: yes
   pdf_document:
     toc: yes
 ---
@@ -67,7 +66,7 @@ Now I will look into what are the most frequent words in each author's works by 
 ## [1] 729 563 559 559 540 516
 ```
 
-![](Who_wrote_the_scariest_novels_poems_files/figure-html/Word Cloud-1.png)<!-- -->
+![](../figs/wc1.png)
 
 ```
 ## [1] 260 230 178 174 168 164
