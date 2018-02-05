@@ -1,18 +1,10 @@
 # Introduction
-<<<<<<< HEAD
+
 In this exploratory analysis, the work of three masters of horror novel/poem will be examined. The analysis tries to find out who wrote the scariest novels/poems. Three authors, namely Edgar Allan Poe, Mary Wollstonecraft Shelley and Howard Phillips Lovecraft???are popular horror authors in their time and in their countries. 
 
 ![Let's get started](figs/Spooky.png)
-=======
-
-In this exploratory analysis, the work of three masters of horror novel/poem will be examined. The analysis tries to find out who wrote the scariest novels/poems. Three authors, namely Edgar Allan Poe, Mary Wollstonecraft Shelley and Howard Phillips Lovecraft, are popular horror authors in their time and in their countries. 
-
-![Let's get started](../figs/raven.jpeg)
->>>>>>> b8c5cd09786af95f4874c6289e41d31c1ff931e1
 
 This analysis is mainly based on sentiment analysis and is divided into 2 major sections: single unit (word) analysis and full unit (paragraph) analysis. Packages used in this analysis include ggplot2, tibble, tidyr, stringr, tidytext, wordcloud, ggridges, dplyr, stopwords, sentimentr and tidyverse. 
-
-
 
 # Single Unit Analysis
 ## Seperating dataset
@@ -53,9 +45,7 @@ To further analyse each word in given texts, I separated the dataset by authors'
 
 Then, I cleaned the data by removing all punctuation and transform all words into lower case using unnest_tokens and removing stopwords using anti_join. 
 
-
-
-![Tidy Data Example](../figs/tidyeap.png)
+![Tidy Data Example](figs/tidyeap.png)
 
 ## Word frequency - Word Cloud
 Now I will look into what are the most frequent words in each author's works by visualizing the data with word cloud function. Comparing the most frequent 100 words in each author's works, we may have a general idea of whose work is the scariest one. 
@@ -65,25 +55,25 @@ Now I will look into what are the most frequent words in each author's works by 
 ## [1] 729 563 559 559 540 516
 ```
 
-![](../figs/wc1.png)
+![](figs/wc1.png)
 
 ```
 ## [1] 260 230 178 174 168 164
 ```
 
-![](../figs/wc2.png)
+![](figs/wc2.png)
 
 ```
 ## [1] 254 238 188 186 174 169
 ```
 
-![] (../figs/wc3.png)
+![] (figs/wc3.png)
 
 ```
 ## [1] 329 273 262 248 243 231
 ```
 
-![](../figs/wc4.png)
+![](figs/wc4.png)
 
 The above word clouds for three authors show the most frequent 100 words in their works. We could see that in EAP used words such as time and length most frequently in his work, HPL used words such as night, strange and heard most frequently in his work while MWS used words such as raymond, love and life most frequently in her work (which do not seem scary to me).
 
