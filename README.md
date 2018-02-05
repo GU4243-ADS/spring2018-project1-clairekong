@@ -67,7 +67,7 @@ Now I will look into what are the most frequent words in each author's works by 
 ## [1] 254 238 188 186 174 169
 ```
 
-![] (figs/wc3.png)
+![](figs/wc3.png)
 
 ```
 ## [1] 329 273 262 248 243 231
@@ -104,6 +104,7 @@ To further look into whose work is the scariest one, I filter the sentiment "fea
 
 
 ![](figs/wtmyf.png)
+
 Surprisingly, MWS used words such as death and fear more often than other two authors while she also used expressed more positive feelings in her works than others did. 
 
 # Full Unit Analysis
