@@ -12,7 +12,7 @@ output:
 
 In this exploratory analysis, the work of three masters of horror novel/poem will be examined. The analysis tries to find out who wrote the scariest novels/poems. Three authors, namely Edgar Allan Poe, Mary Wollstonecraft Shelley and Howard Phillips Lovecraft???are popular horror authors in their time and in their countries. 
 
-![Let's get started](/figs/Spooky.PNG)
+![Let's get started](/spring2018-project1-clairekong/figs/Spooky.PNG)
 
 This analysis is mainly based on sentiment analysis and is divided into 2 major sections: single unit (word) analysis and full unit (paragraph) analysis. Packages used in this analysis include ggplot2, tibble, tidyr, stringr, tidytext, wordcloud, ggridges, dplyr, stopwords, sentimentr and tidyverse. 
 
