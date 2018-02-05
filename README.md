@@ -11,7 +11,7 @@ output:
 ---
 # Introduction
 
-In this exploratory analysis, the work of three masters of horror novel/poem will be examined. The analysis tries to find out who wrote the scariest novels/poems. Three authors, namely Edgar Allan Poe, Mary Wollstonecraft Shelley and Howard Phillips Lovecraft???are popular horror authors in their time and in their countries. 
+In this exploratory analysis, the work of three masters of horror novel/poem will be examined. The analysis tries to find out who wrote the scariest novels/poems. Three authors, namely Edgar Allan Poe, Mary Wollstonecraft Shelley and Howard Phillips Lovecraft, are popular horror authors in their time and in their countries. 
 
 ![Let's get started](/Users/Clairiakong/Desktop/Spooky.PNG)
 
