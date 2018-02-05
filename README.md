@@ -12,7 +12,7 @@ output:
 
 In this exploratory analysis, the work of three masters of horror novel/poem will be examined. The analysis tries to find out who wrote the scariest novels/poems. Three authors, namely Edgar Allan Poe, Mary Wollstonecraft Shelley and Howard Phillips Lovecraft, are popular horror authors in their time and in their countries. 
 
-![Let's get started] (../figs/Spooky.png)
+![Let's get started](../figs/Spooky.png)
 
 This analysis is mainly based on sentiment analysis and is divided into 2 major sections: single unit (word) analysis and full unit (paragraph) analysis. Packages used in this analysis include ggplot2, tibble, tidyr, stringr, tidytext, wordcloud, ggridges, dplyr, stopwords, sentimentr and tidyverse. 
 
@@ -57,7 +57,7 @@ Then, I cleaned the data by removing all punctuation and transform all words int
 
 
 
-![Tidy Data Example] (../figs/tidyeap.png)
+![Tidy Data Example](../figs/tidyeap.png)
 
 ## Word frequency - Word Cloud
 Now I will look into what are the most frequent words in each author's works by visualizing the data with word cloud function. Comparing the most frequent 100 words in each author's works, we may have a general idea of whose work is the scariest one. 
@@ -66,13 +66,13 @@ Now I will look into what are the most frequent words in each author's works by 
 ## [1] 729 563 559 559 540 516
 ```
 
-![] (../figs/wc1.png)
+![](../figs/wc1.png)
 
 ```
 ## [1] 260 230 178 174 168 164
 ```
 
-![] (../figs/wc2.png)
+![](../figs/wc2.png)
 
 ```
 ## [1] 254 238 188 186 174 169
@@ -84,7 +84,7 @@ Now I will look into what are the most frequent words in each author's works by 
 ## [1] 329 273 262 248 243 231
 ```
 
-![] (../figs/wc4.png)
+![](../figs/wc4.png)
 
 The above word clouds for three authors show the most frequent 100 words in their works. We could see that in EAP used words such as time and length most frequently in his work, HPL used words such as night, strange and heard most frequently in his work while MWS used words such as raymond, love and life most frequently in her work (which do not seem scary to me).
 
