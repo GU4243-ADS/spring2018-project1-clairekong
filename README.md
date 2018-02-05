@@ -83,17 +83,17 @@ In this section, I apply sentiment analysis using NRC sentiment lexion. "The NRC
 
 
 
-![](Who_wrote_the_scariest_novels_poems_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](figs/sa1.png)
 
 
 
 
-![](Who_wrote_the_scariest_novels_poems_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](figs/sa2.png)
 
 
 
 
-![](Who_wrote_the_scariest_novels_poems_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](figs/sa3.png)
 
 Looking at the word-level sentiment analysis of three authors, we notice that HPL used fear and negative words most frequently while MWS and EAP used more positive words. 
 
@@ -103,7 +103,7 @@ To further look into whose work is the scariest one, I filter the sentiment "fea
 
 
 
-![](Who_wrote_the_scariest_novels_poems_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](figs/wtmyf.png)
 Surprisingly, MWS used words such as death and fear more often than other two authors while she also used expressed more positive feelings in her works than others did. 
 
 # Full Unit Analysis
@@ -112,10 +112,11 @@ Based on above analysis, it is still hard to say that who is the scariest author
 
 
 
-![](Who_wrote_the_scariest_novels_poems_files/figure-html/unnamed-chunk-10-1.png)<!-- -->![](Who_wrote_the_scariest_novels_poems_files/figure-html/unnamed-chunk-10-2.png)<!-- -->
+![](figs/ds1.png)
+![](figs/ds2.png)
 
 I made two plots to compare authors' usage of fear words on the sentence level. As Plot 1 and Plot 2 show, HPL's works is the scariest for most of sentences in his works express fear or negative feelings while the works of EAP and MWS both tend to express more positive sentiment than HPL did. 
 
-![](Who_wrote_the_scariest_novels_poems_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](figs/ds3.png)
 
 Last, I tried to "score" each author's works with Bing sentiment lexion which categorizes words in a binary fashion into positive and negative categories. As the result show, MWS tends to be the least scaries author and HPL tends to be the scaries author for his works score -5 on average. One sentence of EAP's works scores -10; however, his works are not as scary as HPL's on average. 
