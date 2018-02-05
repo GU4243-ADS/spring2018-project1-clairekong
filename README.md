@@ -1,18 +1,3 @@
----
-title: "Who wrote the scariest novels/poems"
-Author: "Mingyue Kong"
-output:
-  html_document:
-<<<<<<< HEAD
-    toc: True
-    keep_md: True
-=======
-    df_print: paged
-    toc: yes
->>>>>>> b8c5cd09786af95f4874c6289e41d31c1ff931e1
-  pdf_document:
-    toc: yes
----
 # Introduction
 <<<<<<< HEAD
 In this exploratory analysis, the work of three masters of horror novel/poem will be examined. The analysis tries to find out who wrote the scariest novels/poems. Three authors, namely Edgar Allan Poe, Mary Wollstonecraft Shelley and Howard Phillips Lovecraft???are popular horror authors in their time and in their countries. 
