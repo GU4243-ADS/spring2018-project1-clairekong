@@ -86,7 +86,7 @@ tidy_HPL <- anti_join(tidy_HPL, stop_words, by = "word")
 tidy_MWS <- anti_join(tidy_MWS, stop_words, by = "word")
 ```
 
-![Tidy Data Example](/Users/Clairiakong/Desktop/tidyeap.PNG)
+![Tidy Data Example]((../figs/tidyeap.png))
 
 ## Word frequency - Word Cloud
 Now I will look into what are the most frequent words in each author's works by visualizing the data with word cloud function. Comparing the most frequent 100 words in each author's works, we may have a general idea of whose work is the scariest one. 
