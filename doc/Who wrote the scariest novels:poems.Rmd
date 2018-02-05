@@ -5,15 +5,24 @@ output:
   html_document:
     df_print: paged
     toc: yes
+<<<<<<< HEAD
     keep_md: yes
+=======
+>>>>>>> 8942872210d670a20f4d4d484730ad5de8c70548
   pdf_document:
     toc: yes
 ---
 # Introduction
 
+<<<<<<< HEAD
 In this exploratory analysis, the work of three masters of horror novel/poem will be examined. The analysis tries to find out who wrote the scariest novels/poems. Three authors, namely Edgar Allan Poe, Mary Wollstonecraft Shelley and Howard Phillips Lovecraft???are popular horror authors in their time and in their countries. 
 
 ![Let's get started](/Users/Clairiakong/Desktop/Spooky.PNG)
+=======
+In this exploratory analysis, the work of three masters of horror novel/poem will be examined. The analysis tries to find out who wrote the scariest novels/poems. Three authors, namely Edgar Allan Poe, Mary Wollstonecraft Shelley and Howard Phillips Lovecraft, are popular horror authors in their time and in their countries. 
+
+![Let's get started](../figs/Spooky.png)
+>>>>>>> 8942872210d670a20f4d4d484730ad5de8c70548
 
 This analysis is mainly based on sentiment analysis and is divided into 2 major sections: single unit (word) analysis and full unit (paragraph) analysis. Packages used in this analysis include ggplot2, tibble, tidyr, stringr, tidytext, wordcloud, ggridges, dplyr, stopwords, sentimentr and tidyverse. 
 
@@ -87,7 +96,11 @@ tidy_HPL <- anti_join(tidy_HPL, stop_words, by = "word")
 tidy_MWS <- anti_join(tidy_MWS, stop_words, by = "word")
 ```
 
+<<<<<<< HEAD
 ![Tidy Data Example](/Users/Clairiakong/Desktop/tidyeap.PNG)
+=======
+![Tidy Data Example](../figs/tidyeap.png)
+>>>>>>> 8942872210d670a20f4d4d484730ad5de8c70548
 
 ## Word frequency - Word Cloud
 Now I will look into what are the most frequent words in each author's works by visualizing the data with word cloud function. Comparing the most frequent 100 words in each author's works, we may have a general idea of whose work is the scariest one. 
